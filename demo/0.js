@@ -1,7 +1,7 @@
 webpackJsonp([0],{
 
-/***/ 96:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 94:
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
@@ -10,7 +10,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(6);
+var _react = __webpack_require__(10);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -26,6 +26,6 @@ var testComponent = function testComponent() {
 
 exports.default = testComponent;
 
-/***/ }
+/***/ })
 
 });

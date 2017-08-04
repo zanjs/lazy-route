@@ -1,6 +1,6 @@
 {
-  "name": "lazy-route",
-  "version": "1.0.7",
+  "name": "route-lazy",
+  "version": "1.1.0",
   "description": "Lazy / async route loading for React Router 4",
   "main": "./lib/index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mhaagens/lazy-route.git"
+    "url": "git+https://github.com/zanjs/lazy-route.git"
   },
   "keywords": [
     "react-router",
@@ -22,7 +22,7 @@
     "code-splitting",
     "system-import"
   ],
-  "author": "Martin Haagensli",
+  "author": "Zanjs && Martin Haagensli ",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.18.0",
