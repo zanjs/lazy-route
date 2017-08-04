@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import { render } from 'react-dom'
-import {BrowserRouter, Match} from 'react-router'
+import {BrowserRouter, Match} from 'react-router-dom'
 
 import LazyRoute from '../lib/index'
 
