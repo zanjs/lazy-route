@@ -10,7 +10,13 @@ This component only works with React Router 4 and Webpack 2 (because of System.i
 
 Installation:
 
-`npm install route-lazy` or `yarn add route-lazy`
+npm
+
+`npm install route-lazy`
+
+yarn
+
+`yarn add route-lazy`
 
 How to use with React Router 4:
 
@@ -23,6 +29,54 @@ import RouteLazy from 'route-lazy'
   render={(props) => <RouteLazy {...props} component={import('./myComponent')} />}
 />
 ```
+
+### demo
+
+[react-mobx-start](https://github.com/zanjs/react-mobx-start)
+
+
+### demo router
+
+```js
+class RouteComment extends Component {
+  render() {
+    return (
+       <div>
+         <Switch> 
+          <Route
+              exact
+              path={RoutePath.home}
+              render={props => (
+                <RouteLazy {...props} component={import("../pages/home")} />
+              )}
+            />
+          <Route
+            path={RoutePath.topics}
+            render={props => (
+              <RouteLazy {...props} component={import("../pages/topics")} />
+            )}
+          />
+          <Route
+            path={RoutePath.histtory}
+            render={props => (
+              <RouteLazy {...props} component={import("../pages/history")} />
+            )}
+          />
+          <Route
+            path={RoutePath.about}
+            render={props => (
+              <RouteLazy {...props} component={import("../pages/about")} />
+            )}
+          />
+            <Route component={NotFound}/> 
+         </Switch> 
+        </div>
+    );
+  }
+}
+```
+
+
 
 #### Upcoming features
 The component works, but I have yet to add tests and some polish to it,
